@@ -38,6 +38,7 @@ const Product = ({ data }) => {
             <div className="">
               <Image
                 src={data.image}
+                alt={data.title}
                 placeholder="blur"
                 blurDataURL={data.image}
                 objectFit="contain"

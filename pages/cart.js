@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Head from "next/head";
 import { useMycontext } from "../src/Context/context";
 import Link from "next/link";
 import { ShoppingCartIcon } from "@heroicons/react/outline";
@@ -9,9 +10,9 @@ const Cart = () => {
   const { Cart, Total, dispatchCart, dispatchTotal } = useMycontext();
   return (
     <section>
-      <head>
+      <Head>
         <title>ShopNow: Cart</title>
-      </head>
+      </Head>
       <header className="py-5 px-4 sticky top-0 bg-[#232F3E] z-20">
         <nav className="flex justify-between items-center max-w-[1200px] mx-auto">
           <Link href="/">
@@ -45,6 +46,7 @@ const Cart = () => {
                   placeholder="blur"
                   blurDataURL={item.image}
                   objectFit="contain"
+                  alt={item.title}
                   width={200}
                   height={100}
                 />
