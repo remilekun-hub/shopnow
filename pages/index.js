@@ -47,11 +47,7 @@ export default function Home({ data }) {
                 objectFit="contain"
               />
 
-              <h1 className="mb-2 text-sm">
-                {prod.title.length > 25
-                  ? `${prod.title.slice(0, 17)}...`
-                  : prod.title}
-              </h1>
+              <h1 className="mb-2 text-sm">{prod.title}</h1>
 
               <h4 className="text-left mb-2">${prod.price}</h4>
               {Cart.some((c) => c.id == prod.id) ? (
