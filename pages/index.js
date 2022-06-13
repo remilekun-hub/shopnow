@@ -6,7 +6,6 @@ import { ShoppingCartIcon } from "@heroicons/react/outline";
 
 export default function Home({ data }) {
   const { Cart, dispatchCart, Total, dispatchTotal } = useMycontext();
-  console.log({ data });
 
   return (
     <div>

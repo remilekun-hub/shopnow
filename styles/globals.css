@@ -17,7 +17,6 @@ a {
 }
 .main {
   height: calc(100vh- 80px);
-  background-color: green;
 }
 @tailwind base;
 @tailwind components;

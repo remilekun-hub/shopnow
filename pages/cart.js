@@ -49,8 +49,8 @@ const Cart = () => {
         </div>
         <div className="col-span-1 p-4">
           <p>
-            Subtotal ({Cart.lrngth} item):{" "}
-            <span className="font-bold"> ${Total}</span>
+            Subtotal ({Cart.length} {Cart.length > 1 ? "items" : "item"}):{" "}
+            <span className="font-bold"> ${Total.toFixed(2)}</span>
           </p>
           <button className="bg-green-600 text-center px-4 py-1  text-white">
             Proceed to CheckOut
