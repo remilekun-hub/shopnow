@@ -9,6 +9,9 @@ const Cart = () => {
   const { Cart, Total, dispatchCart, dispatchTotal } = useMycontext();
   return (
     <section>
+      <head>
+        <title>ShopNow: Cart</title>
+      </head>
       <header className="py-5 px-4 sticky top-0 bg-[#232F3E] z-20">
         <nav className="flex justify-between items-center max-w-[1200px] mx-auto">
           <Link href="/">

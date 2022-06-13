@@ -8,7 +8,6 @@ import Image from "next/image";
 const Product = ({ data }) => {
   const { title } = data;
   const { Cart, dispatchCart, dispatchTotal } = useMycontext();
-  console.log({ data });
   return (
     <div>
       <Head>
