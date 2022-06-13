@@ -8,6 +8,10 @@ const cartReducer = (state, action) => {
       const cart = [...state];
       const updated = cart.filter((c) => c.id !== action.prod.id);
       return updated;
+    case "REMOVE_FROM_CARTPAGE":
+      const cart2 = [...state];
+      const updatedcart2 = cart2.filter((c) => c.id !== action.prod);
+      return updatedcart2;
     default:
       return state;
   }

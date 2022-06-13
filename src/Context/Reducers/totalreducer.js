@@ -6,7 +6,8 @@ const totalreducer = (state, action) => {
       return state + action.data.price;
     case "REMOVE_FROM_CART":
       return state - action.prod.price;
-
+    case "REMOVE_FROM_CARTPAGE":
+      return state - action.prod;
     default:
       return state;
   }
