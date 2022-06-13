@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: "#EAEDED";
 }
 
 a {
@@ -14,3 +15,10 @@ a {
 * {
   box-sizing: border-box;
 }
+.main {
+  height: calc(100vh- 80px);
+  background-color: green;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
