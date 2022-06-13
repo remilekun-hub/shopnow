@@ -16,7 +16,7 @@ const Cart = () => {
       <header className="py-5 px-4 sticky top-0 bg-[#232F3E] z-20">
         <nav className="flex justify-between items-center max-w-[1200px] mx-auto">
           <Link href="/">
-            <a className="text-white font-bold">ShopNow</a>
+            <a className="text-white font-bold text-[23px]">ShopNow</a>
           </Link>
 
           <Link href="/cart" passHref>
